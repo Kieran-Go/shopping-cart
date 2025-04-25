@@ -1,0 +1,46 @@
+.header {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.shop-name {
+    font-size: 2rem;
+    color: rgb(0, 103, 247);
+    padding-left: 30px;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    margin: 0 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    color: rgb(0, 126, 253);
+}
+
+.active-nav{
+    background-color: rgba(0, 30, 255, 0.15);
+    color: rgb(0, 126, 253);
+    border-radius: 20px;
+}
+
+.cart-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    padding-right: 50px;
+}
