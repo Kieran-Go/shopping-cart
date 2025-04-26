@@ -46,3 +46,19 @@
     padding: 10px;
     padding-right: 50px;
 }
+
+img{
+    width: 30px;
+}
+
+.cart-container > p{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+img:hover, .cart-container > p:hover{
+    cursor: pointer;
+}

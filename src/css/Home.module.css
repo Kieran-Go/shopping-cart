@@ -1,0 +1,76 @@
+.home{
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+h1 > span{
+    color: rgb(0, 103, 247);
+}
+
+.blurb{
+    max-width: 500px;
+    margin: auto;
+}
+
+.shop-button {
+    margin-top: 30px;
+    display: inline-block;
+    background-color: rgb(0, 103, 247);
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 16px;
+    font-size: 1.2em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.shop-button:hover {
+    transform: scale(1.05);
+    background-color: rgb(0, 85, 204);
+}
+
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    text-align: left;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.service {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.service img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    margin: 10px 0 5px 0;
+    font-size: 1.2em;
+}
+
+.service p {
+    font-size: 1em;
+    color: #555;
+}

@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import styles from '../css/Header.module.css';
+import cartIcon from '../assets/svg/cart.svg';
 
 function Header({ cart }) {
   const pages = ["Home", "Shop"]; // Array containing the names of pages for navigation
@@ -34,7 +35,7 @@ function Header({ cart }) {
 
       {/* Shopping cart section */}
       <div className={styles['cart-container']}>
-        <p>Cart</p>
+        <img src={cartIcon}/>
         <p>{cart.length}</p>
       </div>
     </div>
