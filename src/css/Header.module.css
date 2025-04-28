@@ -51,14 +51,29 @@ img{
     width: 30px;
 }
 
-.cart-container > p{
+.cart-link > p{
+    text-decoration: none;
     background-color: rgb(255, 0, 0);
     color: white;
     border-radius: 50%;
     padding: 5px 10px;
-    margin-left: 5px;
 }
 
 img:hover, .cart-container > p:hover{
     cursor: pointer;
+}
+
+.cart-link {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cart-link:hover {
+    background-color: rgba(205, 205, 205, 0.5);
+    transform: scale(1.05);
 }

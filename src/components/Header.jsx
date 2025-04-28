@@ -6,6 +6,12 @@ function Header({ cart }) {
   const pages = ["Home", "Shop"]; // Array containing the names of pages for navigation
   const location = useLocation(); // Get the current URL
 
+  // Calculate total number of items in the cart
+  let cartCount = 0;
+  for(let i = 0; i < cart.length; i++) {
+    cartCount += cart[i].quantity;
+  }
+
   return (
     <div className={styles.header}>
       {/* Shop name */}
@@ -35,8 +41,10 @@ function Header({ cart }) {
 
       {/* Shopping cart section */}
       <div className={styles['cart-container']}>
-        <img src={cartIcon}/>
-        <p>{cart.length}</p>
+        <Link to="/checkout" className={styles['cart-link']}>
+            <img src={cartIcon} alt="Cart" />
+            <p>{cartCount}</p>
+        </Link>
       </div>
     </div>
   );
