@@ -2,7 +2,7 @@ import { useOutletContext } from "react-router-dom";
 import useFetchItems from "../hooks/useFetchItems";
 import styles from "../css/Shop.module.css";
 import Loading from "./Loading";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import capitalizeFirstLetter from "../scripts/capitalizeFirstLetter";
 
 function Shop() {
@@ -73,8 +73,9 @@ function Shop() {
     };
     
     if (loading) return <Loading />;
-    if(error) return <p>A network error has occurred. Please try again later.</p>;
-    if (!items || items.length === 0) return <p>No products available at the moment.</p>;
+    if (error) return <p style={{ textAlign: 'center' }}>A network error has occurred. Please try again later.</p>;
+    if (!items || items.length === 0) return <p style={{ textAlign: 'center' }}>No products available at the moment.</p>;
+
 
     return (
         <div className={styles['shop-page']}>
