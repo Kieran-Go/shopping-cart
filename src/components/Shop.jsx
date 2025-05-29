@@ -93,6 +93,7 @@ function Shop() {
                     value={searchValue}
                     onChange={handleSearchChange}
                     className={styles['search-bar']}
+                    aria-label="Search Products"
                 />
 
                 {/* Category Dropdown */}
@@ -100,6 +101,7 @@ function Shop() {
                     value={catValue}
                     onChange={handleCategoryChange}
                     className={styles['category-dropdown']}
+                    aria-label="Search Category"
                 >
                     <option value="All Categories">All Categories</option>
                     {itemCategories.map((category, index) => (
